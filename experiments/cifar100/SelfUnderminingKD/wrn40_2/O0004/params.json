@@ -1,0 +1,17 @@
+{
+    "dataset": "cifar100",
+    "model_name": "wrn40_2",
+
+    "learning_rate": 1e-1,
+    "schedule": [60, 120, 160],
+    "gamma": 0.2,
+    "batch_size": 128,
+    "num_epochs": 200,
+    "num_workers": 8,
+    "augmentation": 1,
+    "cuda": 1,
+    "teacherModel": "wrn40_2",
+    "TeacherCkpt": "experiments/cifar100/cross-entropy/wrn40_2/best_model.tar",
+    "Temp": 20,
+    "omega": 0.004
+}
